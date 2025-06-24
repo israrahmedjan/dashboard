@@ -4,6 +4,7 @@ const nextConfig = {
         domains: ['localhost',
           'images.pexels.com',
           'res.cloudinary.com',
+          'dashboard-nine-bay-63.vercel.app',
         ],
       },
 };
