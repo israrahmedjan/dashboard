@@ -20,8 +20,8 @@ export async function POST(request) {
     const size = formData.get("size");
     const color = formData.get("color");
     const description = formData.get("description");
-    const price = formData.get("price");
-    const stock = formData.get("stock");
+    const price = parseInt(formData.get("price"));
+    const stock = parseInt(formData.get("stock"));
     const variationdId = formData.get("variationdId").toString();
     const imageUrl = formData.get("imageUrl").toString();
   const imageId = formData.get("publicId").toString();

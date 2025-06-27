@@ -159,6 +159,8 @@ export function ListVariations() {
                 </TableCell>
                 <TableCell className="py-3 px-4 font-medium">
                   {item.name}
+                  {/* { JSON.stringify(item.product,null,2)} */}
+                  {(item.product.length >0) && (<span>{item.product.map((prod,i)=>(<span key={i}>- ({prod.name})</span>))}</span>)}
                 </TableCell>
                 <TableCell className="py-3 px-4">{item.size}</TableCell>
                 <TableCell className="py-3 px-4">{item.color}</TableCell>
