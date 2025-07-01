@@ -1,12 +1,12 @@
 'use client';
 import React, { useState } from 'react';
 
-function CatPagination({ total, getCategoryHandle,pageNum }) {
+function CatPagination({ total, getVariationsHandle,pageNum }) {
   const [currentPage, setCurrentPage] = useState(pageNum);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
-    getCategoryHandle(page);
+    getVariationsHandle(page);
   };
 
   const handlePrevious = () => {
